@@ -1,4 +1,7 @@
 ProjectMain::Application.routes.draw do
+
+get "projectmain/home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
