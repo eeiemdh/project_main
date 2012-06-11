@@ -1,4 +1,16 @@
 // Place all the styles related to the projectmain controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 h1 { text-align: center}
+
+#banner{ width: 250px;
+  padding: .5em 0em .5em 2em;
+  margin-left: 40%;
+  background-color:#75152C;
+}
+
+ul { position:relative;
+  list-style:none;
+  float:left;
+}
