@@ -1,10 +1,12 @@
 ProjectMain::Application.routes.draw do
-
+  resources :sessions, only: [:new, :create, :destroy]
   resources :users
 #get "projectmain/home"
 root :to => 'projectmain#home'
   match '/signup', to: 'users#new'
   match '/show', to: 'users#show'
+  match '/sessions',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
