@@ -11,3 +11,102 @@
  *= require_self
  *= require_tree .
  */
+#ulref{
+    position: relative;
+    display:inline;
+    padding: 0em 1em 1em 1em;}
+
+
+ul li { display: inline;}
+
+body {background-color:#FCFBE3;}
+
+div ul li {display: block;}
+
+
+a  {
+    padding: .5em .5em .5em .5em;
+    font-weight: bold;
+}
+
+a:link{color: green;
+}
+
+a:visited{color: #AD234B;}
+
+
+
+a:hover{
+    color:blueviolet;}
+
+a:active{
+
+    padding: .5em .5em .5em .5em;
+
+    background: blueviolet;
+    font-weight: bold;
+}
+
+
+
+#banner{ width: 250px;
+    padding: .5em 0em .5em 2em;
+    margin-left: 40%;
+    background-color:#75152C;
+
+}
+#Leftcolumn{
+
+    float: left;
+    width: 250px;
+    height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    bottom: 0;
+    left:0;
+    background: gray;
+  /*  background: #E0E0E0;  */
+}
+#space { float:right;
+         width: 100%;
+         height:100px;
+        }
+
+#Rightcolumn{
+
+    float:right;
+    width: 50%;
+    margin-left: .5em;
+    margin-right: 1.75em;
+    margin-bottom: .5em;
+    background:#FCEBB6;
+
+}
+
+#li_other {
+    margin:0px;
+    padding-left: 0em;
+    padding-right: 0.5em;
+    list-style-type: none;
+    font-size: .75em;
+    color:#975684;
+
+
+}
+li {padding: .5em .5em .5em 0em;
+    font-family: verdana;
+    font-size: 11px;
+    font-weight: bold;
+    color: #AD234B;
+}
+
+
+.table_id {
+
+    width: 600px;
+    height: 300px;
+    border-collapse: collapse;
+}
+*/
+

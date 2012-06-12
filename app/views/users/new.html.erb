@@ -1,26 +1,33 @@
 
 <%= provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
+<h1 xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+    xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">Sign up</h1>
 
-<div class="row">
-  <div class="span6 offset3">
+<div>
+  <div class="inline">
+
     <%= form_for(@user) do |f| %>
 
-        <%= f.label :name %>
-        <%= f.text_field :name %>
+      <p> <%= f.label :name %>
+        <%= f.text_field :name %> </p>
 
-        <%= f.label :email %>
-        <%= f.text_field :email %>
-        <%= f.label :location %>
-        <%= f.text_field :location %>
 
-        <%= f.label :password %>
-        <%= f.password_field :password %>
+      <p> <%= f.label :email %>
+        <%= f.text_field :email %> </p>
 
-        <%= f.label :password_confirmation, "Confirmation" %>
-        <%= f.password_field :password_confirmation %>
+       <p> <%= f.label :location %>
+        <%= f.text_field :location %></p>
 
-        <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+       <p> <%= f.label :password %>
+        <%= f.password_field :password %></p>
+
+       <p> <%= f.label :password_confirmation, "Password Confirmation" %>
+        <%= f.password_field :password_confirmation %> </p>
+
+      <p><%= f.submit "Create my account", class: "btn btn-large btn-primary" %></p>
+        <%= render 'shared/error_messages' %>
+
     <% end %>
+
   </div>
 </div>

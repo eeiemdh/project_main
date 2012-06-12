@@ -4,6 +4,7 @@ ProjectMain::Application.routes.draw do
 #get "projectmain/home"
 root :to => 'projectmain#home'
   match '/signup', to: 'users#new'
+  match '/show', to: 'users#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
