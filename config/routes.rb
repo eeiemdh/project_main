@@ -1,15 +1,18 @@
 ProjectMain::Application.routes.draw do
+  get "store/index"
+
   resources :products
 
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
 #get "projectmain/home"
 root :to => 'projectmain#home'
+  #root to: 'store#index', as: 'store'
   match '/signup', to: 'users#new'
   match '/show', to: 'users#show'
   match '/sessions',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
-
+  match '/store/index', to: 'store#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
