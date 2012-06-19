@@ -1,4 +1,6 @@
 ProjectMain::Application.routes.draw do
+  resources :products
+
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
 #get "projectmain/home"
